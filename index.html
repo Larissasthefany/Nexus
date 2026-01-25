@@ -1,46 +1,156 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./assets/css/reset.css">
-        <link rel="stylesheet" href="./assets/css/styles.css">
-        <link rel="stylesheet" href="./assets/css/responsive.css">
-        <title>Nexus Digital</title>
-    </head>
-    <body>
-        <nav>
-            <div class="navbar">
-                <div class="logo">Nexus</div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 
-                <div id="menu-burguer">
+    <title>Nexus</title>
+  </head>
 
-                    <ul id="menu">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#project">Project</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+  <body>
+
+    <nav>
+      <div class="navbar">
+
+        <div class="logo">Nexus</div>
+
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="menu-mobile" id="menuMobile">
+          <ul id="menu">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+          <button id="btn-register">Register</button>
+
+          <div class="mode-dark">
+            <label class="switch">
+              <input type="checkbox" aria-label="Alternar modo escuro">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="hero-container">
+          <span class="hero-breadcrumb">home > services</span>
+          <h1 class="hero-title">Our Services</h1>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <img src="./assets/img/support.svg" class="hero-image"
+            alt="suporte nexus">
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="container">
+
+          <div class="card-content">
+            <span class="icon">
+              <img src="./assets/img/social-media.svg" alt="Social media">
+            </span>
+
+            <h3>Social Media Marketing</h3>
+
+            <p>Create and manage content on social media and build strong online
+              presence.</p>
+
+            <button class="btn-card">Read More</button>
+
+          </div>
+
+          <div class="card-content featured">
+            <span class="icon">
+              <img src="./assets/img/search.svg" alt="search">
+            </span>
+            <h3>Search Engine Optimization (SEO)</h3>
+            <p>Improve your website ranking and visibility in search
+              engines.</p>
+            <button class="btn-card">Read More</button>
+          </div>
+
+          <div class="card-content">
+            <span class="icon">
+              <img src="./assets/img/content.svg" alt="Content Marketing">
+            </span>
+            <h3>Content Marketing</h3>
+            <p>Create engaging content that attracts and converts customers.</p>
+            <button class="btn-card">Read More</button>
+          </div>
+
+          <div class="card-content">
+            <span class="icon">
+              <img src="./assets/img/email.svg" alt="Email">
+            </span>
+            <h3>Email Marketing</h3>
+            <p>Reach your customers directly with target email.</p>
+            <button class="btn-card">Read More</button>
+          </div>
+
+          <div class="card-content">
+            <span class="icon">
+              <img src="./assets/img/web.svg" alt="Web">
+            </span>
+            <h3>Web Design & Optimization</h3>
+            <p>Creator a professional and user friendly website that helps your
+              stand out from the competition.</p>
+            <button class="btn-card">Read More</button>
+          </div>
+
+          <div class="card-content">
+            <span class="icon">
+              <img src="./assets/img/analytics.svg" alt="Web Analytics">
+            </span>
+            <h3>Web Analytics & Reporting</h3>
+            <p>Help your set up and manage website analytics and provide regular
+              reporting analytics.</p>
+            <button class="btn-card">Read More</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="workflow">
+        <div class="workflow-container">
+          <div class="workflow-content">
+            <p class="subtitle">How it works</p>
+            <h2>our process workflow</h2>
+
+            <div class="steps-grid">
+              <div class="step">
+                <span class="number">01</span>
+                <div class="step-text">
+                  <h3>Consultation</h3>
+                  <p>Schedule a consultation to discuss your business goals.</p>
                 </div>
-
-                <button id="btn-register">Register</button>
+              </div>
             </div>
-        </nav>
+          </div>
+          <div class="workflow-image">
+            <img src="./assets/img/product.svg"  alt="Process Illustration">
+          </div>
+        </div>
+      </section>
+    </main>
 
-        <main>
-            <section class="hero">
-                <div class="hero-container">
-                    <span class="hero-breadcrumb">home > services</span>
-                    <h1 class="hero-title">Our Services</h1>
-                </div>
+    <script src="./assets/js/script.js"></script>
+    <script type="module" src="./assets/js/menu.js"></script>
+    <script type="module" src="./assets/js/card.js"></script>
 
-                <div class="hero-image-wrapper">
-                    <img src="./assets/img/support.svg" class="hero-image"
-                        alt="suporte nexus">
-                </div>
-            </section>
-
-        </main>
-    </body>
+  </body>
 </html>
