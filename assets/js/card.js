@@ -13,12 +13,12 @@ btns.forEach((btn) => {
     e.preventDefault();
     e.stopPropagation();
 
-    const confirmed = confirm("Ainda não tem funcionalidade!");
+    const confirmed = confirm("It doesn't have functionality yet!");
 
     if(confirmed){
-        console.log("Usúario clicou em Ok")
+        console.log("User clicked Ok")
     }else{
-        console.log("Usúario clicou em cancelou")
+        console.log("User clicked cancel")
     }
   });
 });
