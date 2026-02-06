@@ -21,3 +21,12 @@ if (savedTheme === "dark") {
   document.body.classList.remove("dark-mode");
   inputCheck.checked = false;
 }
+
+const btnTop = document.querySelector('.back-to-top');
+
+btnTop.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // Faz a subida ser suave
+  });
+});
