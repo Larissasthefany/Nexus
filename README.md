@@ -18,7 +18,7 @@ O layout inclui **navbar com menu mobile**, seção hero, cards de serviços, se
 
 ## 🚀 Funcionalidades
 
-✅ Layout moderno e responsivo  
+✅ Layout moderno  
 ✅ Menu mobile com botão hamburger  
 ✅ Estrutura bem organizada em seções  
 ✅ Cards de serviços com botão  
